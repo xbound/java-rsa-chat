@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+<StackPane fx:id="mainPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.GUIController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #ffff;">
+         <children>
+            <JFXButton fx:id="registerButton" layoutX="8.0" layoutY="257.0" onAction="#registerPressed" prefHeight="25.0" prefWidth="158.0" style="-fx-background-color: #03A9F4;" text="Register" textFill="WHITE" />
+            <JFXButton fx:id="findUserButton" layoutX="8.0" layoutY="290.0" onAction="#findUserPressed" prefHeight="25.0" prefWidth="158.0" style="-fx-background-color: #03A9F4;" text="Find user" textFill="WHITE" />
+            <JFXButton fx:id="newAliasButton" layoutX="8.0" layoutY="321.0" onAction="#newAliasPressed" prefHeight="25.0" prefWidth="158.0" style="-fx-background-color: #03A9F4;" text="Create user" textFill="WHITE" />
+            <JFXButton fx:id="newKeyButton" layoutX="8.0" layoutY="352.0" onAction="#newKeyPressed" prefHeight="25.0" prefWidth="158.0" style="-fx-background-color: #03A9F4;" text="New key" textFill="WHITE" />
+            <JFXTextArea fx:id="chatArea" editable="false" layoutX="175.0" layoutY="14.0" maxWidth="422.0" minWidth="422.0" prefHeight="380.0" prefWidth="422.0" />
+            <JFXTextField fx:id="messageField" focusColor="#03a9f4" layoutX="168.0" layoutY="349.0" maxWidth="333.0" minWidth="288.0" prefHeight="31.0" prefWidth="333.0" promptText="Type message here..." style="-fx-background-color: #ffffff;" />
+            <JFXButton fx:id="sendButton" layoutX="503.0" layoutY="352.0" onAction="#sendButton" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #03A9F4;" text="SEND" textFill="WHITE" />
+            <Text fx:id="usernameLabel" disable="true" fill="#03a9f4" layoutX="15.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="145.0" />
+            <ListView fx:id="contactListView" layoutX="7.0" layoutY="39.0" prefHeight="200.0" prefWidth="165.0" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>
